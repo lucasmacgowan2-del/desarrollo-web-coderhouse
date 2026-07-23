@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#06b6d4"/>
+  <circle cx="400" cy="210" r="80" fill="white" opacity="0.2"/>
+  <text x="400" y="220" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Development Workspace</text>
+  <text x="400" y="270" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" opacity="0.8" text-anchor="middle">Coderhouse Web Development</text>
+</svg>

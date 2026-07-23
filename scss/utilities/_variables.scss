@@ -1,0 +1,44 @@
+// ==========================================
+// SCSS Variables - Design Tokens & Theme
+// ==========================================
+
+// Color Palette
+$primary: #6366f1;
+$primary-light: #818cf8;
+$primary-dark: #4f46e5;
+$secondary: #06b6d4;
+$accent: #ec4899;
+$success: #10b981;
+
+// Neutral Colors (Dark Mode First)
+$bg-dark: #0b0f19;
+$bg-card: #161f33;
+$bg-card-hover: #1e293b;
+$border-color: rgba(255, 255, 255, 0.1);
+$text-primary: #f8fafc;
+$text-secondary: #94a3b8;
+$text-muted: #64748b;
+
+// Typography
+$font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+// Spacing Scale
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2.5rem;
+$spacing-xl: 4rem;
+
+// Border Radius
+$radius-sm: 0.375rem;
+$radius-md: 0.75rem;
+$radius-lg: 1.25rem;
+$radius-full: 9999px;
+
+// Shadows & Effects
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+$shadow-glow: 0 0 25px rgba(99, 102, 241, 0.35);
+$shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+$transition-fast: all 0.2s ease;
+$transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
