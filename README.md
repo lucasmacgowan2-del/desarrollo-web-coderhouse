@@ -1,6 +1,10 @@
 # Portafolio Personal - Desarrollo Web (Coderhouse)
 
-Este repositorio contiene la estructura base y semántica en HTML5 del sitio web personal para el curso de **Desarrollo Web** de Coderhouse.
+Este repositorio contiene el proyecto integrador desarrollado para el curso de **Desarrollo Web** de Coderhouse.
+
+## 🌐 Sitio Desplegado
+
+- **URL de Producción (GitHub Pages)**: [https://lucasmacgowan2-del.github.io/desarrollo-web-coderhouse/](https://lucasmacgowan2-del.github.io/desarrollo-web-coderhouse/)
 
 ## 📁 Estructura del Proyecto
 
@@ -12,6 +16,8 @@ Este repositorio contiene la estructura base y semántica en HTML5 del sitio web
 │   ├── proyectos.html
 │   ├── servicios.html
 │   └── contacto.html
+├── styles/
+│   └── styles.css
 └── assets/
     └── images/
         ├── perfil.jpg
@@ -21,17 +27,10 @@ Este repositorio contiene la estructura base y semántica en HTML5 del sitio web
         └── contacto-oficina.jpg
 ```
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías y Módulos Aplicados
 
 * **HTML5 Semántico**: Uso exclusivo de etiquetas semánticas (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<figure>`, `<figcaption>`).
-* **Estándares W3C**: Estructura válida con declaración `<!DOCTYPE html>`, atributos de idioma, meta charset UTF-8, viewport para dispositivos móviles y jerarquía de encabezados sin saltos (`<h1>` → `<h2>` → `<h3>`).
-* **Accesibilidad**: Atributos `alt` descriptivos en todas las imágenes.
-
-## 🚀 Navegación y Rutas
-
-Todas las páginas están interconectadas mediante rutas relativas:
-- **Inicio**: `index.html`
-- **Sobre Mí**: `pages/sobre-mi.html`
-- **Proyectos**: `pages/proyectos.html`
-- **Servicios**: `pages/servicios.html`
-- **Contacto**: `pages/contacto.html`
+* **CSS3 & Tipografía**: Google Fonts (`Montserrat`, `Open Sans`), jerarquía tipográfica con unidades `rem` y paleta de colores en Hexadecimal y HSL.
+* **Layouts Flexbox & CSS Grid**: Maquetación responsiva 1D y 2D (`display: flex`, `display: grid`, `grid-template-areas`, `gap`, `clamp()`).
+* **Bootstrap 5.3 CDN**: Navbar responsivo con menú hamburguesa, componentes interactivos (Modales, Carousel, Acordeón).
+* **Git & GitHub**: Flujo de versiones profesional con branches por entregable y mensajes de commit descriptivos (`feat`, `style`, `fix`, `docs`).
