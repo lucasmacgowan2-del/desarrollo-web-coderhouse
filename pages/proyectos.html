@@ -8,25 +8,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Hoja de Estilos Externa -->
+    <!-- Bootstrap 5.3 CDN CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Hoja de Estilos Externa Personalizada -->
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
 
-    <!-- Encabezado Principal y Navegación -->
-    <header class="header-principal">
-        <div class="marca-contenedor">
-            <h2 class="marca-titulo">Lucas Mac Gowan</h2>
-            <p class="marca-subtitulo">Portafolio Profesional de Desarrollo Web</p>
-        </div>
-        <nav class="nav-principal">
-            <ul class="nav-lista">
-                <li class="nav-item"><a href="../index.html" class="nav-enlace">Inicio</a></li>
-                <li class="nav-item"><a href="sobre-mi.html" class="nav-enlace">Sobre mí</a></li>
-                <li class="nav-item"><a href="proyectos.html" class="nav-enlace">Proyectos</a></li>
-                <li class="nav-item"><a href="servicios.html" class="nav-enlace">Servicios</a></li>
-                <li class="nav-item"><a href="contacto.html" class="nav-enlace">Contacto</a></li>
-            </ul>
+    <!-- Navbar Responsivo de Bootstrap -->
+    <header class="header-principal sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark w-100 p-0">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand marca-contenedor me-auto" href="../index.html">
+                    <span class="marca-titulo d-block">Lucas Mac Gowan</span>
+                    <span class="marca-subtitulo d-block">Portafolio Profesional de Desarrollo Web</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav nav-lista">
+                        <li class="nav-item"><a class="nav-link nav-enlace" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link nav-enlace" href="sobre-mi.html">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link nav-enlace active" href="proyectos.html">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link nav-enlace" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link nav-enlace" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                            <button type="button" class="btn boton-primario btn-sm" data-bs-toggle="modal" data-bs-target="#contactModal">Consultar</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -36,36 +48,97 @@
         <section id="proyectos-intro" class="seccion-destacada">
             <h1>Mis Proyectos</h1>
             <h2>Trabajos y Desarrollos Realizados</h2>
-            <p>Una selección de proyectos web desarrollados aplicando estándares modernos de maquetación HTML5, hojas de estilo responsivas y mejores prácticas de diseño.</p>
+            <p>Una selección de proyectos web desarrollados aplicando estándares modernos de maquetación HTML5, hojas de estilo responsivas, Flexbox y Bootstrap 5.3.</p>
             <figure class="figura-multimedia">
-                <img src="../assets/images/proyectos-galeria.jpg" alt="Captura de pantalla de la galería de proyectos desarrollados en pantalla de computadora y tablet" class="imagen-responsiva">
+                <img src="../assets/images/proyectos-galeria.jpg" alt="Captura de pantalla de la galería de proyectos desarrollados" class="imagen-responsiva">
                 <figcaption class="leyenda-multimedia">Galería y vitrina de proyectos web desarrollados con maquetación responsiva</figcaption>
             </figure>
         </section>
 
-        <!-- Listado de Proyectos -->
+        <!-- Listado de Proyectos con Grilla de Bootstrap -->
         <section id="listado-proyectos" class="seccion-proyectos">
             <h2>Galería de Trabajos</h2>
 
-            <article class="tarjeta-proyecto">
-                <h3>Portal Web SarExpress</h3>
-                <p>Plataforma de servicios de paquetería y logística internacional. Diseñada con enfoque mobile-first, maquetación semántica y menús intuitivos.</p>
-                <p><strong>Tecnologías utilizadas:</strong> HTML5, CSS3, Google Fonts.</p>
-            </article>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="tarjeta-proyecto h-100">
+                        <h3>Portal Web SarExpress</h3>
+                        <p>Plataforma de servicios de paquetería y logística internacional. Diseñada con enfoque mobile-first, maquetación semántica y menús intuitivos.</p>
+                        <p><strong>Tecnologías utilizadas:</strong> HTML5, CSS3, Flexbox, Bootstrap 5.</p>
+                        <button type="button" class="btn btn-outline-info btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal1">Ver Detalles</button>
+                    </article>
+                </div>
 
-            <article class="tarjeta-proyecto">
-                <h3>Sitio Web Institucional Studio Web</h3>
-                <p>Landing page para estudio creativo digital con secciones de servicios, proyectos recientes y formulario de contacto accesible.</p>
-                <p><strong>Tecnologías utilizadas:</strong> HTML5, CSS3, Gradientes y Paleta HSL.</p>
-            </article>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="tarjeta-proyecto h-100">
+                        <h3>Sitio Web Studio Web</h3>
+                        <p>Landing page para estudio creativo digital con secciones de servicios, proyectos recientes y formulario de contacto accesible.</p>
+                        <p><strong>Tecnologías utilizadas:</strong> HTML5, CSS3, CSS Grid, Media Queries.</p>
+                        <button type="button" class="btn btn-outline-info btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal2">Ver Detalles</button>
+                    </article>
+                </div>
 
-            <article class="tarjeta-proyecto">
-                <h3>Tienda Virtual E-Commerce Demo</h3>
-                <p>Maquetación de tienda en línea con catálogo de productos, tarjetas responsivas con efecto de elevación y formulario de carrito.</p>
-                <p><strong>Tecnologías utilizadas:</strong> HTML5, CSS3, Selectores de clase.</p>
-            </article>
+                <div class="col-12 col-lg-4">
+                    <article class="tarjeta-proyecto h-100">
+                        <h3>Tienda Virtual E-Commerce</h3>
+                        <p>Maquetación de tienda en línea con catálogo de productos, tarjetas responsivas con efecto de elevación y formulario de carrito.</p>
+                        <p><strong>Tecnologías utilizadas:</strong> HTML5, CSS3, Pseudoclases, JavaScript.</p>
+                        <button type="button" class="btn btn-outline-info btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal3">Ver Detalles</button>
+                    </article>
+                </div>
+            </div>
         </section>
     </main>
+
+    <!-- Modal de Detalles de Proyecto 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="projectModal1Label">Portal Web SarExpress</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Este proyecto consiste en el desarrollo de la interfaz pública y panel de usuario para la empresa de courier SarExpress. Incluye cotizadores interactivos, registro de envíos y seguimiento en tiempo real.</p>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Consulta Rápida -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="contactModalLabel">Enviar Consulta Rápida</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post" class="formulario-box">
+                        <div class="mb-3">
+                            <label for="modal-nombre" class="campo-etiqueta">Tu Nombre:</label>
+                            <input type="text" class="campo-entrada form-control" id="modal-nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="modal-email" class="campo-etiqueta">Correo Electrónico:</label>
+                            <input type="email" class="campo-entrada form-control" id="modal-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="modal-mensaje" class="campo-etiqueta">Mensaje:</label>
+                            <textarea class="campo-entrada form-control" id="modal-mensaje" rows="3" required></textarea>
+                        </div>
+                        <div class="modal-footer border-secondary px-0 pb-0">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn boton-primario">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Pie de Página -->
     <footer class="footer-principal">
@@ -77,6 +150,9 @@
             <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
         </ul>
     </footer>
+
+    <!-- Bootstrap 5.3 CDN JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
