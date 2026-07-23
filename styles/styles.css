@@ -214,6 +214,28 @@ a:hover {
   transform: translateY(0);
 }
 
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(99, 102, 241, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);
+  }
+}
+@keyframes floatHero {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .tarjeta-servicio {
   background-color: #0f172a;
   padding: 1.5rem;
@@ -225,6 +247,10 @@ a:hover {
   align-items: stretch;
   gap: 0.75rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tarjeta-servicio:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 12px 30px -10px rgba(99, 102, 241, 0.4);
 }
 
 .tarjeta-proyecto {
@@ -239,6 +265,10 @@ a:hover {
   gap: 0.75rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.tarjeta-proyecto:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 12px 30px -10px rgba(6, 182, 212, 0.4);
+}
 
 .tarjeta-faq {
   background-color: #0f172a;
@@ -251,6 +281,14 @@ a:hover {
   align-items: stretch;
   gap: 0.75rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tarjeta-faq:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -10px rgba(236, 72, 153, 0.4);
+}
+
+.figura-multimedia {
+  animation: floatHero 6s ease-in-out infinite;
 }
 
 .grid-servicios,

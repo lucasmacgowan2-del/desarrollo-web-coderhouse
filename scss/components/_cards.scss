@@ -1,18 +1,63 @@
 // ==========================================
-// SCSS Components: Tarjetas de Servicios y Proyectos
+// SCSS Components: Tarjetas & Animaciones Nativas
 // ==========================================
 
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
+// Keyframes Animaciones Nativas CSS
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(99, 102, 241, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);
+    }
+}
+
+@keyframes floatHero {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .tarjeta-servicio {
     @include card-variant($primary-color);
+
+    &:hover {
+        transform: translateY(-6px) scale(1.01);
+        box-shadow: 0 12px 30px -10px rgba(99, 102, 241, 0.4);
+    }
 }
 
 .tarjeta-proyecto {
     @include card-variant($secondary-color);
+
+    &:hover {
+        transform: translateY(-6px) scale(1.01);
+        box-shadow: 0 12px 30px -10px rgba(6, 182, 212, 0.4);
+    }
 }
 
 .tarjeta-faq {
     @include card-variant($accent-color);
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px -10px rgba(236, 72, 153, 0.4);
+    }
+}
+
+// Animación nativa en hero
+.figura-multimedia {
+    animation: floatHero 6s ease-in-out infinite;
 }
