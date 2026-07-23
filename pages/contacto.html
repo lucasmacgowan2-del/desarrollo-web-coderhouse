@@ -4,73 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Lucas Mac Gowan - Desarrollador Web</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Hoja de Estilos Externa -->
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
 
     <!-- Encabezado Principal y Navegación -->
-    <header>
-        <div>
-            <h2>Lucas Mac Gowan</h2>
-            <p>Portafolio Profesional de Desarrollo Web</p>
+    <header class="header-principal">
+        <div class="marca-contenedor">
+            <h2 class="marca-titulo">Lucas Mac Gowan</h2>
+            <p class="marca-subtitulo">Portafolio Profesional de Desarrollo Web</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="sobre-mi.html">Sobre mí</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+        <nav class="nav-principal">
+            <ul class="nav-lista">
+                <li class="nav-item"><a href="../index.html" class="nav-enlace">Inicio</a></li>
+                <li class="nav-item"><a href="sobre-mi.html" class="nav-enlace">Sobre mí</a></li>
+                <li class="nav-item"><a href="proyectos.html" class="nav-enlace">Proyectos</a></li>
+                <li class="nav-item"><a href="servicios.html" class="nav-enlace">Servicios</a></li>
+                <li class="nav-item"><a href="contacto.html" class="nav-enlace">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Contenido Principal -->
-    <main>
+    <main class="contenido-principal">
         <!-- Sección de Introducción de Contacto -->
-        <section id="contacto-intro">
+        <section id="contacto-intro" class="seccion-destacada">
             <h1>Contacto</h1>
             <h2>¿Tienes un Proyecto en Mente? ¡Hablemos!</h2>
             <p>Si deseas desarrollar un nuevo sitio web, rediseñar uno existente o realizar consultas sobre mis servicios, no dudes en enviar un mensaje.</p>
-            <figure>
-                <img src="../assets/images/contacto-oficina.jpg" alt="Persona escribiendo un mensaje en la computadora para enviar una consulta de desarrollo web">
-                <figcaption>Formulario de contacto y comunicación directa para nuevos proyectos web</figcaption>
+            <figure class="figura-multimedia">
+                <img src="../assets/images/contacto-oficina.jpg" alt="Persona escribiendo un mensaje en la computadora para enviar una consulta de desarrollo web" class="imagen-responsiva">
+                <figcaption class="leyenda-multimedia">Formulario de contacto y comunicación directa para nuevos proyectos web</figcaption>
             </figure>
         </section>
 
         <!-- Formulario de Contacto -->
-        <section id="formulario-contacto">
+        <section id="formulario-contacto" class="seccion-formulario">
             <h2>Enviar un Mensaje</h2>
-            <form action="#" method="post">
+            <form action="#" method="post" class="formulario-box">
                 <p>
-                    <label for="nombre">Nombre Completo:</label><br>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
+                    <label for="nombre" class="campo-etiqueta">Nombre Completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" class="campo-entrada" placeholder="Tu nombre y apellido" required>
                 </p>
                 <p>
-                    <label for="email">Correo Electrónico:</label><br>
-                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                    <label for="email" class="campo-etiqueta">Correo Electrónico:</label><br>
+                    <input type="email" id="email" name="email" class="campo-entrada" placeholder="correo@ejemplo.com" required>
                 </p>
                 <p>
-                    <label for="asunto">Asunto:</label><br>
-                    <input type="text" id="asunto" name="asunto" placeholder="Motivo de consulta" required>
+                    <label for="asunto" class="campo-etiqueta">Asunto:</label><br>
+                    <input type="text" id="asunto" name="asunto" class="campo-entrada" placeholder="Motivo de consulta" required>
                 </p>
                 <p>
-                    <label for="mensaje">Mensaje:</label><br>
-                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    <label for="mensaje" class="campo-etiqueta">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" class="campo-entrada" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
                 </p>
                 <p>
-                    <button type="submit">Enviar Consulta</button>
+                    <button type="submit" class="boton-primario">Enviar Consulta</button>
                 </p>
             </form>
         </section>
 
         <!-- Información de Contacto Directo -->
-        <section id="datos-contacto">
+        <section id="datos-contacto" class="seccion-datos">
             <h2>Información de Contacto</h2>
-            <article>
+            <article class="tarjeta-servicio">
                 <h3>Correo Electrónico</h3>
                 <p>contacto@lucasmacgowan.com</p>
             </article>
-            <article>
+            <article class="tarjeta-servicio">
                 <h3>Ubicación</h3>
                 <p>Buenos Aires, Argentina</p>
             </article>
@@ -78,10 +84,10 @@
     </main>
 
     <!-- Pie de Página -->
-    <footer>
+    <footer class="footer-principal">
         <p>&copy; 2026 Lucas Mac Gowan. Todos los derechos reservados.</p>
         <p>Desarrollado para el curso de Desarrollo Web en Coderhouse.</p>
-        <ul>
+        <ul class="footer-enlaces">
             <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
             <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
             <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>

@@ -4,68 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos | Lucas Mac Gowan - Desarrollador Web</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Hoja de Estilos Externa -->
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
 
     <!-- Encabezado Principal y Navegación -->
-    <header>
-        <div>
-            <h2>Lucas Mac Gowan</h2>
-            <p>Portafolio Profesional de Desarrollo Web</p>
+    <header class="header-principal">
+        <div class="marca-contenedor">
+            <h2 class="marca-titulo">Lucas Mac Gowan</h2>
+            <p class="marca-subtitulo">Portafolio Profesional de Desarrollo Web</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="sobre-mi.html">Sobre mí</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+        <nav class="nav-principal">
+            <ul class="nav-lista">
+                <li class="nav-item"><a href="../index.html" class="nav-enlace">Inicio</a></li>
+                <li class="nav-item"><a href="sobre-mi.html" class="nav-enlace">Sobre mí</a></li>
+                <li class="nav-item"><a href="proyectos.html" class="nav-enlace">Proyectos</a></li>
+                <li class="nav-item"><a href="servicios.html" class="nav-enlace">Servicios</a></li>
+                <li class="nav-item"><a href="contacto.html" class="nav-enlace">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Contenido Principal -->
-    <main>
+    <main class="contenido-principal">
         <!-- Sección de Introducción de Proyectos -->
-        <section id="proyectos-intro">
+        <section id="proyectos-intro" class="seccion-destacada">
             <h1>Mis Proyectos</h1>
             <h2>Trabajos y Desarrollos Realizados</h2>
             <p>Una selección de proyectos web desarrollados aplicando estándares modernos de maquetación HTML5, hojas de estilo responsivas y mejores prácticas de diseño.</p>
-            <figure>
-                <img src="../assets/images/proyectos-galeria.jpg" alt="Captura de pantalla de la galería de proyectos desarrollados en pantalla de computadora y tablet">
-                <figcaption>Galería y vitrina de proyectos web desarrollados con maquetación responsiva</figcaption>
+            <figure class="figura-multimedia">
+                <img src="../assets/images/proyectos-galeria.jpg" alt="Captura de pantalla de la galería de proyectos desarrollados en pantalla de computadora y tablet" class="imagen-responsiva">
+                <figcaption class="leyenda-multimedia">Galería y vitrina de proyectos web desarrollados con maquetación responsiva</figcaption>
             </figure>
         </section>
 
         <!-- Listado de Proyectos -->
-        <section id="listado-proyectos">
+        <section id="listado-proyectos" class="seccion-proyectos">
             <h2>Galería de Trabajos</h2>
 
-            <article class="proyecto-item">
+            <article class="tarjeta-proyecto">
                 <h3>Portal Web SarExpress</h3>
                 <p>Plataforma de servicios de paquetería y logística internacional. Diseñada con enfoque mobile-first, maquetación semántica y menús intuitivos.</p>
-                <p><strong>Tecnologías utilizadas:</strong> HTML5, CSS3, Flexbox, Bootstrap.</p>
+                <p><strong>Tecnologías utilizadas:</strong> HTML5, CSS3, Google Fonts.</p>
             </article>
 
-            <article class="proyecto-item">
+            <article class="tarjeta-proyecto">
                 <h3>Sitio Web Institucional Studio Web</h3>
                 <p>Landing page para estudio creativo digital con secciones de servicios, proyectos recientes y formulario de contacto accesible.</p>
-                <p><strong>Tecnologías utilizadas:</strong> HTML5, SCSS, CSS Grid, Media Queries.</p>
+                <p><strong>Tecnologías utilizadas:</strong> HTML5, CSS3, Gradientes y Paleta HSL.</p>
             </article>
 
-            <article class="proyecto-item">
+            <article class="tarjeta-proyecto">
                 <h3>Tienda Virtual E-Commerce Demo</h3>
                 <p>Maquetación de tienda en línea con catálogo de productos, tarjetas responsivas con efecto de elevación y formulario de carrito.</p>
-                <p><strong>Tecnologías utilizadas:</strong> HTML5, CSS3, Flexbox, JavaScript.</p>
+                <p><strong>Tecnologías utilizadas:</strong> HTML5, CSS3, Selectores de clase.</p>
             </article>
         </section>
     </main>
 
     <!-- Pie de Página -->
-    <footer>
+    <footer class="footer-principal">
         <p>&copy; 2026 Lucas Mac Gowan. Todos los derechos reservados.</p>
         <p>Desarrollado para el curso de Desarrollo Web en Coderhouse.</p>
-        <ul>
+        <ul class="footer-enlaces">
             <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
             <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
             <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>

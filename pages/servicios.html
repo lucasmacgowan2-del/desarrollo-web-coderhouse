@@ -4,69 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios | Lucas Mac Gowan - Desarrollador Web</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Hoja de Estilos Externa -->
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
 
     <!-- Encabezado Principal y Navegación -->
-    <header>
-        <div>
-            <h2>Lucas Mac Gowan</h2>
-            <p>Portafolio Profesional de Desarrollo Web</p>
+    <header class="header-principal">
+        <div class="marca-contenedor">
+            <h2 class="marca-titulo">Lucas Mac Gowan</h2>
+            <p class="marca-subtitulo">Portafolio Profesional de Desarrollo Web</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="sobre-mi.html">Sobre mí</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+        <nav class="nav-principal">
+            <ul class="nav-lista">
+                <li class="nav-item"><a href="../index.html" class="nav-enlace">Inicio</a></li>
+                <li class="nav-item"><a href="sobre-mi.html" class="nav-enlace">Sobre mí</a></li>
+                <li class="nav-item"><a href="proyectos.html" class="nav-enlace">Proyectos</a></li>
+                <li class="nav-item"><a href="servicios.html" class="nav-enlace">Servicios</a></li>
+                <li class="nav-item"><a href="contacto.html" class="nav-enlace">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Contenido Principal -->
-    <main>
+    <main class="contenido-principal">
         <!-- Sección de Introducción de Servicios -->
-        <section id="servicios-intro">
+        <section id="servicios-intro" class="seccion-destacada">
             <h1>Mis Servicios</h1>
             <h2>Soluciones Web a Medida para tu Proyecto</h2>
             <p>Ofrezco servicios profesionales de desarrollo y maquetación web adaptados a las necesidades de cada cliente, garantizando calidad técnica y diseño responsivo.</p>
-            <figure>
-                <img src="../assets/images/servicios-web.jpg" alt="Ilustración de servicios de diseño web responsivo en pantalla de laptop, tablet y smartphone">
-                <figcaption>Servicios integrales de desarrollo frontend y maquetación adaptativa</figcaption>
+            <figure class="figura-multimedia">
+                <img src="../assets/images/servicios-web.jpg" alt="Ilustración de servicios de diseño web responsivo en pantalla de laptop, tablet y smartphone" class="imagen-responsiva">
+                <figcaption class="leyenda-multimedia">Servicios integrales de desarrollo frontend y maquetación adaptativa</figcaption>
             </figure>
         </section>
 
         <!-- Detalle de Servicios -->
-        <section id="servicios-detalle">
+        <section id="servicios-detalle" class="seccion-servicios">
             <h2>¿En qué te puedo ayudar?</h2>
 
-            <article class="servicio-card">
+            <article class="tarjeta-servicio">
                 <h3>Diseño y Maquetación Web</h3>
                 <p>Creación de sitios web desde cero a partir de diseños en Figma o prototipos. Estructura HTML5 limpia y semántica optimizada para rendimiento.</p>
             </article>
 
-            <article class="servicio-card">
+            <article class="tarjeta-servicio">
                 <h3>Rediseño y Adaptación Responsiva</h3>
                 <p>Modernización de sitios web antiguos para asegurar que se vean y funcionen perfectamente en smartphones, tablets y pantallas de alta resolución.</p>
             </article>
 
-            <article class="servicio-card">
+            <article class="tarjeta-servicio">
                 <h3>Optimización SEO On-Page</h3>
                 <p>Estructuración correcta de etiquetas meta, encabezados jerárquicos y atributos de accesibilidad para mejorar el posicionamiento en Google.</p>
             </article>
         </section>
 
         <!-- Sección Preguntas Frecuentes -->
-        <section id="preguntas-frecuentes">
+        <section id="preguntas-frecuentes" class="seccion-faq">
             <h2>Preguntas Frecuentes</h2>
 
-            <article class="faq-item">
+            <article class="tarjeta-faq">
                 <h3>¿Cuánto tiempo lleva desarrollar un sitio web?</h3>
                 <p>El tiempo depende de la complejidad del proyecto. Una página web institucional o landing page suele demorar entre 1 y 2 semanas.</p>
             </article>
 
-            <article class="faq-item">
+            <article class="tarjeta-faq">
                 <h3>¿El sitio web se verá bien en teléfonos celulares?</h3>
                 <p>Sí, absolutamente. Todos los proyectos se desarrollan bajo la metodología mobile-first y son 100% responsivos.</p>
             </article>
@@ -74,10 +80,10 @@
     </main>
 
     <!-- Pie de Página -->
-    <footer>
+    <footer class="footer-principal">
         <p>&copy; 2026 Lucas Mac Gowan. Todos los derechos reservados.</p>
         <p>Desarrollado para el curso de Desarrollo Web en Coderhouse.</p>
-        <ul>
+        <ul class="footer-enlaces">
             <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
             <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
             <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>

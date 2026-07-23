@@ -4,74 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Mac Gowan | Desarrollador Web Frontend & Diseñador UI</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Hoja de Estilos Externa -->
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
     <!-- Encabezado Principal y Navegación -->
-    <header>
-        <div>
-            <h2>Lucas Mac Gowan</h2>
-            <p>Portafolio Profesional de Desarrollo Web</p>
+    <header class="header-principal">
+        <div class="marca-contenedor">
+            <h2 class="marca-titulo">Lucas Mac Gowan</h2>
+            <p class="marca-subtitulo">Portafolio Profesional de Desarrollo Web</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/sobre-mi.html">Sobre mí</a></li>
-                <li><a href="pages/proyectos.html">Proyectos</a></li>
-                <li><a href="pages/servicios.html">Servicios</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
+        <nav class="nav-principal">
+            <ul class="nav-lista">
+                <li class="nav-item"><a href="index.html" class="nav-enlace">Inicio</a></li>
+                <li class="nav-item"><a href="pages/sobre-mi.html" class="nav-enlace">Sobre mí</a></li>
+                <li class="nav-item"><a href="pages/proyectos.html" class="nav-enlace">Proyectos</a></li>
+                <li class="nav-item"><a href="pages/servicios.html" class="nav-enlace">Servicios</a></li>
+                <li class="nav-item"><a href="pages/contacto.html" class="nav-enlace">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Contenido Principal -->
-    <main>
+    <main class="contenido-principal">
         <!-- Sección de Presentación Principal -->
-        <section id="hero">
+        <section id="hero" class="seccion-destacada">
             <h1>Desarrollo Web Frontend y Soluciones Digitales</h1>
             <p>Hola, soy Lucas Mac Gowan. Creo sitios web modernos, accesibles y optimizados para potenciar marcas y negocios en la web.</p>
-            <figure>
-                <img src="assets/images/perfil.jpg" alt="Fotografía profesional de Lucas Mac Gowan trabajando en desarrollo web frente a la computadora">
-                <figcaption>Lucas Mac Gowan - Desarrollador Web Frontend especializado en HTML5, CSS3 y JavaScript</figcaption>
+            <figure class="figura-multimedia">
+                <img src="assets/images/perfil.jpg" alt="Fotografía profesional de Lucas Mac Gowan trabajando en desarrollo web frente a la computadora" class="imagen-responsiva">
+                <figcaption class="leyenda-multimedia">Lucas Mac Gowan - Desarrollador Web Frontend especializado en HTML5, CSS3 y JavaScript</figcaption>
             </figure>
         </section>
 
         <!-- Sección de Biografía Breve -->
-        <section id="biografia-corta">
+        <section id="biografia-corta" class="seccion-biografia">
             <h2>Mi Trayectoria</h2>
             <p>Con pasión por la tecnología y la creación de interfaces intuitivas, me he formado en la maquetación web semántica, diseño responsivo y optimización de experiencia de usuario. Mi enfoque combina estética visual con un código limpio y eficiente.</p>
         </section>
 
         <!-- Sección de Servicios y Habilidades -->
-        <section id="servicios-resumen">
+        <section id="servicios-resumen" class="seccion-servicios">
             <h2>Servicios y Habilidades Destacadas</h2>
 
-            <article class="servicio-item">
+            <article class="tarjeta-servicio">
                 <h3>Maquetación Web Semántica</h3>
                 <p>Construcción de estructuras HTML5 siguiendo los estándares de la industria para garantizar accesibilidad y optimización para motores de búsqueda (SEO).</p>
             </article>
 
-            <article class="servicio-item">
+            <article class="tarjeta-servicio">
                 <h3>Diseño Web Responsivo</h3>
                 <p>Creación de sitios web adaptables a cualquier dispositivo (teléfonos móviles, tablets y computadoras de escritorio) utilizando CSS3 moderno.</p>
             </article>
 
-            <article class="servicio-item">
+            <article class="tarjeta-servicio">
                 <h3>Optimización y Rendimiento</h3>
                 <p>Estructuración limpia de archivos y activos multimedia para lograr tiempos de carga rápidos y una excelente experiencia de usuario.</p>
             </article>
         </section>
 
         <!-- Sección de Proyectos Destacados -->
-        <section id="proyectos-destacados">
+        <section id="proyectos-destacados" class="seccion-proyectos">
             <h2>Proyectos Recientes</h2>
 
-            <article class="proyecto-card">
+            <article class="tarjeta-proyecto">
                 <h3>Plataforma SarExpress</h3>
                 <p>Desarrollo de interfaz de usuario y panel de administración para gestión logística de envíos internacionales.</p>
             </article>
 
-            <article class="proyecto-card">
+            <article class="tarjeta-proyecto">
                 <h3>Estudio Creativo Web Studio</h3>
                 <p>Diseño y maquetación de sitio web institucional para agencia de diseño digital y desarrollo web.</p>
             </article>
@@ -79,10 +85,10 @@
     </main>
 
     <!-- Pie de Página -->
-    <footer>
+    <footer class="footer-principal">
         <p>&copy; 2026 Lucas Mac Gowan. Todos los derechos reservados.</p>
         <p>Desarrollado para el curso de Desarrollo Web en Coderhouse.</p>
-        <ul>
+        <ul class="footer-enlaces">
             <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
             <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
             <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
