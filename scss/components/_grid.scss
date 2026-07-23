@@ -1,0 +1,22 @@
+// ==========================================
+// SCSS Components: Grillas (CSS Grid 2D)
+// ==========================================
+
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.grid-servicios,
+.grid-proyectos,
+.grid-faq {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    @include respond-to('tablet') {
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+    }
+
+    @include respond-to('desktop') {
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+    }
+}

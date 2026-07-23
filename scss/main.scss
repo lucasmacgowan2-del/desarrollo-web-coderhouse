@@ -1,0 +1,16 @@
+// ==========================================================================
+// DESARROLLO WEB - CODERHOUSE
+// Módulo 7: Arquitectura SCSS Modular y Refactorización Completa
+// Punto de Entrada Maestro (main.scss)
+// ==========================================================================
+
+@use "utilities/variables" as *;
+@use "utilities/mixins" as *;
+@use "base/base";
+@use "base/typography";
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";
+@use "components/buttons";
+@use "components/cards";
+@use "components/grid";

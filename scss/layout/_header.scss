@@ -1,0 +1,39 @@
+// ==========================================
+// SCSS Layout: Header Principal
+// ==========================================
+
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.header-principal {
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+    color: #ffffff;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 2px solid $border-color;
+    @include flex-layout(column, center, center, 1rem);
+
+    @include respond-to('tablet') {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5rem 2.5rem;
+    }
+
+    .marca-contenedor {
+        text-align: center;
+
+        @include respond-to('tablet') {
+            text-align: left;
+        }
+
+        .marca-titulo {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .marca-subtitulo {
+            color: $text-muted;
+            font-size: 0.85rem;
+        }
+    }
+}

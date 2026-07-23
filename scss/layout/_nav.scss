@@ -1,0 +1,46 @@
+// ==========================================
+// SCSS Layout: Navegación Principal
+// ==========================================
+
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.nav-principal {
+    width: 100%;
+
+    @include respond-to('tablet') {
+        width: auto;
+    }
+
+    .nav-lista {
+        list-style: none;
+        @include flex-layout(row, center, center, 1rem);
+        flex-wrap: wrap;
+
+        @include respond-to('tablet') {
+            gap: 1.5rem;
+        }
+
+        .nav-item {
+            display: flex;
+
+            .nav-enlace {
+                color: $text-sub;
+                font-weight: 600;
+                padding: 0.4rem 0.75rem;
+                border-radius: $radius-sm;
+                transition: background-color 0.2s ease, color 0.2s ease;
+
+                &:hover {
+                    color: $secondary-color;
+                    background-color: rgba(255, 255, 255, 0.05);
+                }
+
+                &.active {
+                    color: $primary-light;
+                    background-color: rgba(99, 102, 241, 0.15);
+                }
+            }
+        }
+    }
+}

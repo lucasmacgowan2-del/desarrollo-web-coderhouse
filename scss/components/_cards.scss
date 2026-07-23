@@ -1,0 +1,18 @@
+// ==========================================
+// SCSS Components: Tarjetas de Servicios y Proyectos
+// ==========================================
+
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.tarjeta-servicio {
+    @include card-variant($primary-color);
+}
+
+.tarjeta-proyecto {
+    @include card-variant($secondary-color);
+}
+
+.tarjeta-faq {
+    @include card-variant($accent-color);
+}

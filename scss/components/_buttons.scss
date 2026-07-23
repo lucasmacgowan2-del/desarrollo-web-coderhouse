@@ -1,0 +1,15 @@
+// ==========================================
+// SCSS Components: Botones
+// ==========================================
+
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.boton-primario {
+    @include button-style($primary-color, #ffffff);
+    align-self: flex-start;
+}
+
+.boton-secundario {
+    @include button-style($secondary-color, #ffffff);
+}
