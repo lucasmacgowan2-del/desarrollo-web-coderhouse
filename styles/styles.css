@@ -214,6 +214,11 @@ a:hover {
   transform: translateY(0);
 }
 
+.tarjeta-faq, .tarjeta-proyecto, .tarjeta-servicio {
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 @keyframes pulseGlow {
   0% {
     box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);

@@ -5,6 +5,12 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
+// Placeholder reutilizable mediante @extend
+%card-base-layout {
+    border-radius: $radius-md;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 // Keyframes Animaciones Nativas CSS
 @keyframes pulseGlow {
     0% {
@@ -31,6 +37,7 @@
 }
 
 .tarjeta-servicio {
+    @extend %card-base-layout;
     @include card-variant($primary-color);
 
     &:hover {
@@ -40,6 +47,7 @@
 }
 
 .tarjeta-proyecto {
+    @extend %card-base-layout;
     @include card-variant($secondary-color);
 
     &:hover {
@@ -49,6 +57,7 @@
 }
 
 .tarjeta-faq {
+    @extend %card-base-layout;
     @include card-variant($accent-color);
 
     &:hover {
